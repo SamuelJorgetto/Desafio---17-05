@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Sistema</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="clientes.html">Consulta de Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Consulta de Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro_cliente.html">Cadastro de Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro_produto.html">Cadastro de Produtos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h1>Cadastro de Clientes</h1>
+        <form id="form-cadastro-cliente">
+            <div class="form-group">
+                <label for="nomeCliente">Nome:</label>
+                <input type="text" class="form-control" id="nomeCliente" placeholder="Nome do Cliente">
+            </div>
+            <div class="form-group">
+                <label for="codigoCliente">Código:</label>
+                <input type="text" class="form-control" id="codigoCliente" placeholder="Código do Cliente">
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="cadastro_cliente.js"></script>
+</body>
+</html>

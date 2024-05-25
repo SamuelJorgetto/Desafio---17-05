@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Clientes</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Sistema</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="clientes.html">Consulta de Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Consulta de Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro_cliente.html">Cadastro de Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro_produto.html">Cadastro de Produtos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <h1>Consulta de Clientes</h1>
+        <form id="form-cliente">
+            <div class="form-group">
+                <label for="searchCliente">Buscar Cliente:</label>
+                <input type="text" class="form-control" id="searchCliente" placeholder="Nome ou Código do Cliente">
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+        <div id="resultadosClientes" class="mt-4"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="clientes.js"></script>
+</body>
+</html>
